@@ -1,0 +1,6 @@
+packages:
+  - bunchee-vue-jsx
+  - rsbuild-vue3
+
+catalog:
+  vue: ^3.4
