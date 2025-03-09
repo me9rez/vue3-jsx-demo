@@ -1,3 +1,8 @@
+<div align="center">
+    <img src="https://vuejs.org/logo.svg" height="300" />
+ <img src="https://assets.rspack.dev/rsbuild/rsbuild-logo.svg" height="300" />
+</div>
+
 # vue3-jsx-demo
 
 本项目展示了如何在Vue 3中使用JSX/TSX进行开发，集成了Rsbuild作为构建工具。
