@@ -2,6 +2,7 @@
   <div class="content">
     <h1>Rsbuild with Vue</h1>
     <p>Start building amazing things with Rsbuild.</p>
+
     <Layout size='medium'></Layout>
     <a-button @click="handleClick">Open Modal</a-button>
     <Test v-model:foo="foo" v-model:bar="bar"></Test>
@@ -21,13 +22,12 @@
 <script setup lang="ts">
 import { ref, defineComponent, h, watch } from 'vue'
 import { Modal } from '@arco-design/web-vue'
-import { Layout } from "@conponents/index";
-import Test from './components/Test.vue';
+import Test from './components/Test1.vue';
 import Test2 from './components/Test2.vue';
+import { Layout } from 'lib'
 
 const foo = ref('test')
 const bar = ref(0)
-
 
 function handleClick() {
   Modal.info({
@@ -37,7 +37,6 @@ function handleClick() {
     })
   })
 }
-
 
 watch(foo, (newValue) => {
   console.log("newValue foo", newValue);

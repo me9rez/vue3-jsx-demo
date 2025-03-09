@@ -12,8 +12,8 @@ export const Layout = defineComponent({
   render() {
     return (
       <div>
-        <h2>vue3 jsx</h2>
-        <div>div元素rrr</div>
+        <h1>vue3 jsx/tsx</h1>
+        <div>div元素</div>
       </div>
     )
   }

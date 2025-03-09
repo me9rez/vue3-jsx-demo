@@ -15,7 +15,7 @@ export default defineConfig({
             pragma: 'h',
             pragmaFrag: 'Fragment',
             importSource: "vue",
-            runtime: "automatic"
+            runtime: "classic"
           }
         }
       }
