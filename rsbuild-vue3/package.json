@@ -8,14 +8,14 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.56.3",
-    "@vueuse/core": "^12.8.2",
+    "@arco-design/web-vue": "^2.57.0",
+    "@vueuse/core": "^13.6.0",
     "vue": "catalog:",
     "lib": "workspace:*"
   },
   "devDependencies": {
-    "@rsbuild/core": "1.2.16",
-    "@rsbuild/plugin-vue": "1.0.7",
-    "typescript": "^5.8.2"
+    "@rsbuild/core": "1.4.15",
+    "@rsbuild/plugin-vue": "1.1.1",
+    "typescript": "^5.9.2"
   }
 }

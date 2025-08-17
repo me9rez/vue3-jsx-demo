@@ -2,9 +2,10 @@
   "name": "vue3-jsx-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": ""
+    "dev": "pnpm --filter lib build && pnpm --filter rsbuild-vue3 dev",
+    "build": "pnpm --filter lib build && pnpm --filter rsbuild-vue3 build"
   },
   "keywords": [],
   "author": "",

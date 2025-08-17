@@ -1,3 +1,0 @@
-dev:
-    cd ../bunchee-vue-jsx && pnpm build
-    pnpm dev

@@ -9,12 +9,19 @@ export const layoutProps = {
 
 export const Layout = defineComponent({
   props: layoutProps,
-  render() {
-    return (
-      <div>
-        <h1>vue3 jsx/tsx</h1>
-        <div>div元素</div>
-      </div>
-    )
+  setup(props, { slots, attrs, emit }) {
+    const defaultSlot = slots.default
+
+    return () => {
+      return (
+        defaultSlot ? (
+          <div>
+            <h2>Layout Component</h2>
+            {defaultSlot()}
+          </div>
+        ) : <span>default slot is empty</span>
+
+      )
+    }
   }
 })

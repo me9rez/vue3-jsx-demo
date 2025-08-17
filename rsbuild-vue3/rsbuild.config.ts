@@ -14,8 +14,6 @@ export default defineConfig({
           react: {
             pragma: 'h',
             pragmaFrag: 'Fragment',
-            importSource: "vue",
-            runtime: "classic"
           }
         }
       }

@@ -10,13 +10,12 @@
 import { defineComponent, ref } from 'vue'
 import { useVModel, useVModels } from '@vueuse/core'
 
-
 export default defineComponent({
     props: {
         foo: String,
         bar: Number
     },
-    setup(props, { slots, emit }) {
+    setup(props, { slots, emit, attrs }) {
         const { foo, bar } = useVModels(props, emit)
 
         function handleClick() {

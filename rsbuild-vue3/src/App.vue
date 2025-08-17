@@ -3,9 +3,12 @@
     <h1>Rsbuild with Vue</h1>
     <p>Start building amazing things with Rsbuild.</p>
 
-    <Layout size='medium'></Layout>
+    <Layout size='medium'>
+    </Layout>
     <a-button @click="handleClick">Open Modal</a-button>
-    <Test v-model:foo="foo" v-model:bar="bar"></Test>
+
+
+    <!-- <Test v-model:foo="foo" v-model:bar="bar"></Test>
 
     <Test2>
       <template v-slot:default="data">
@@ -14,7 +17,7 @@
       <template name="item" v-slot:item="data">
         {{ data.id }}
       </template>
-    </Test2>
+    </Test2> -->
 
   </div>
 </template>
@@ -31,9 +34,11 @@ const bar = ref(0)
 
 function handleClick() {
   Modal.info({
-    title: 'Info Title',
+    title: '标题',
     content: () => h(Layout, {
       size: "medium"
+    },{
+      default: () => h('div', 'default slot')
     })
   })
 }
